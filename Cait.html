@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <title>Форма вибору курсу та спеціальності</title>
+</head>
+<body>
+
+<form id="curseForm">
+    <label for="curse">Оберіть курс:</label>
+    <select id="curse" name="curse">
+        <option value="1">1 курс</option>
+        <option value="2">2 курс</option>
+        <option value="3">3 курс</option>
+        <option value="4">4 курс</option>
+    </select>
+
+    <label for="specialnist">Оберіть спеціальність:</label>
+    <select id="specialnist" name="specialnist">
+        <option value="Комп'ютерні науки">Комп'ютерні науки</option>
+        <option value="Прикладна механіка">Прикладна механіка</option>
+        <option value="Менеджмент">Менеджмент</option>
+    </select>
+
+    <button type="button" onclick="submitForm()">Відправити</button>
+</form>
+
+<div id="resultTable"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="src/script/script.js"></script>
+</body>
+</html>
